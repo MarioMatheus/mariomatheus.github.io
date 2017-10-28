@@ -1,0 +1,44 @@
+.presentation {
+    display: table;
+    height: 100vh;
+    padding-bottom: 0;
+    padding-top: 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.section {
+    position: relative;
+    padding-top: 200px;
+    padding-bottom: 120px;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.presentation h1 {
+    text-align: center!important;
+    font-weight: bold;
+}
+
+.presentation h3 {
+	font-family: "Courier New", Courier, monospace;
+}
+
+.my-cards {
+    margin-right: 20px;
+    margin-left: 20px;
+	margin-top: 100px;
+}
+
+.my-group {
+	max-height: 100% !important;
+	max-width: 100% !important;
+	height: 500px;
+	width: 500px;
+}
+
+.my-footer {
+    margin-top: 150px;
+    height: 150px;
+}

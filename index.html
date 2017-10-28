@@ -1,0 +1,173 @@
+<html>
+	<head>
+		<title>Desenhando</title>
+		<link href="css/bootstrap.css" rel="stylesheet">
+		<link href="css/main.css" rel="stylesheet">
+
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			$(document).ready(function() {
+				function filterPath(string) {
+					return string
+					.replace(/^\//,'')
+					.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
+					.replace(/\/$/,'');
+				}
+				$('a[href*=#]').each(function() {
+					if ( filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/,'') ) {
+						var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
+						var $target = $targetId.length ? $targetId : $targetAnchor.length ? $targetAnchor : false;
+						if ($target) {
+							var targetOffset = $target.offset().top;
+							$(this).click(function() {
+								$('html, body').animate({scrollTop: targetOffset}, 600);
+								return false;
+							});
+						}
+					}
+				});
+			});
+		</script>
+
+	</head>
+
+	<body>
+
+		<!--BARRA DE NAVEGACAO PRINCIPAL-->
+		<nav class="navbar navbar-dark bg-dark text-white" 
+			 style="font-weight: bold;">
+				Desenhando
+				<a href="https://github.com/MarioMatheus">
+					<img class="github-icon" src="img/github-icon.png" alt="Icone Borali">
+				</a>
+		</nav>
+		
+		<!--APRESENTACAO DO SITE-->
+		<div class="presentation section text-center">
+			<h1>Meus desenhos</h1>
+			<h3>Mario Matheus</h3>
+			<div id="list-example" class="list-group">
+			  <a class="list-group-item list-group-item-action" href="#list-item-1">Let's go</a>
+			</div>
+		</div>
+
+		<hr>
+
+		<!--ANCORA-->
+		<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
+			<div id="list-item-1">
+
+				<!--CARD BORRAO-->
+				<div>
+					<div class="my-cards card mb-3">
+						<img class="card-img-top" src="img/borrao.png" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">BORRÃO</h4>
+							<p class="card-text">Feita no Paint utilizado o Spray, ISSO É UM DINOSSAURO?</p>
+							<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+						</div>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+		<!--FIM ANCORA-->
+
+		<div class="card-group"> <!--CARDS DOS ICONES DA UVA-->
+
+			<!--CARD BORALI-->
+			<div class="my-cards card mb-3">
+				<img class="card-img-top" src="img/borali-icon.png" alt="Icone Borali">
+				<div class="card-body">
+					<h4 class="card-title">BORALÍ</h4>
+					<p class="card-text">Icone de aplicação em desenvolvimento pela UVA</p>
+					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+				</div>
+			</div>
+
+			<!--CARD GENTILICOS-->
+			<div class="my-cards card mb-3">
+				<img class="card-img-top " src="img/gentilicos-icon.png" alt="Card image cap">
+				<div class="card-body">
+					<h4 class="card-title">GENTÍLICOS</h4>
+					<p class="card-text">Icone de aplicativo sobre gentilicos brasileiros</p>
+					<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+				</div>
+			</div>
+
+			<!--CARD UVA LOGO-->
+			<div class="my-cards card mb-3">
+				<img class="card-img-top " src="img/uva-logo.png" alt="Card image cap">
+				<div class="card-body">
+					<h4 class="card-title">UVA</h4>
+					<p class="card-text">Startup em planejamento... :)</p>
+					<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+				</div>
+			</div>
+
+		</div> <!--FIM DO GRUPO DE LOGOS DA UVA-->
+
+
+
+		<div class="card-group"> <!--CARDS INCP / FUTURE BAR-->
+
+			<!--CARD INCP-->
+			<div class="my-cards card mb-3">
+				<img class="card-img-top" src="img/incp.png" alt="Icone Borali">
+				<div class="card-body">
+					<h4 class="card-title">INCP</h4>
+					<p class="card-text">Emblema do time de e-sports</p>
+					<p class="card-text"><small class="text-muted">Feita em 2015</small></p>
+				</div>
+			</div>
+
+			<!--CARD FUTURE BAR-->
+			<div class="my-cards card mb-3">
+				<img class="card-img-top " src="img/sprites-bar.png" alt="Card image cap">
+				<div class="card-body">
+					<h4 class="card-title">FUTURE BAR</h4>
+					<p class="card-text">... de programa que ilustra o problema do bar pequeno</p>
+					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+				</div>
+			</div>
+
+		</div> <!--FIM DOS CARDS INCP / FUTURE BAR-->
+
+
+
+		<div class="card-group"> <!--DETEPARTAMENTO TELEMATICA-->
+
+			<!--CARD DETEL-->
+			<div class="my-cards card mb-3">
+				<img class="card-img-top" src="img/icone-detel.png" alt="Icone Borali">
+				<div class="card-body">
+					<h4 class="card-title">DETEL</h4>
+					<p class="card-text">Escudo dos times do departamento de telemática do IFCE/p>
+					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+				</div>
+			</div>
+
+			<!--CARD UNIFORME-->
+			<div class="my-cards card mb-3">
+				<img class="card-img-top " src="img/uniforme-basquete.png" alt="Card image cap">
+				<div class="card-body">
+					<h4 class="card-title">UNIFORME</h4>
+					<p class="card-text">Uniforme de basquete do departamento</p>
+					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+				</div>
+			</div>
+
+		</div> <!--FIM DOS DEPARTAMENTO DE TELEMATICA-->
+
+
+
+		<footer>
+			<nav class="my-footer navbar navbar-dark bg-dark text-white" style="font-weight: bold;">
+				<p>Desenhos de Mario Matheus</p>
+				<p>Email: mariomatheu@gmail.com</p>
+				<p>©Todos os direitos reservados</p>
+			</nav>
+		</footer>
+
+	</body>
+</html>
