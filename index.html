@@ -47,11 +47,21 @@
 		</nav>
 		
 		<!--APRESENTACAO DO SITE-->
-		<div class="presentation section text-center">
+		<div class="presentation section text-center jumbotron jumbotron-fluid">
 			<h1>Meus desenhos</h1>
 			<h3>Mario Matheus</h3>
 			<div id="list-example" class="list-group">
-			  <a class="list-group-item list-group-item-action" href="#list-item-1">Let's go</a>
+				<ul class="nav justify-content-center">
+					<li class="nav-item">
+						<a class="nav-link active" href="#list-item-1">Desenhos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#list-item-2">Projetos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#list-item-3">Diversos</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 
@@ -61,109 +71,126 @@
 		<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
 			<div id="list-item-1">
 
-				<!--CARD BORRAO-->
-				<div>
-					<div class="card mb-3">
-						<img class="card-img-top" src="img/borrao.png" alt="Card image cap">
-						<div class="card-body">
-							<h4 class="card-title">BORRÃO</h4>
-							<p class="card-text">Feita no Paint utilizado o Spray, ISSO É UM DINOSSAURO?</p>
-							<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+				<div class="sessoes">
+					<div class="card">
+						<h3>Desenhos</h3>
+					</div>
+					<!--CARD BORRAO-->
+					<div class="card-group">
+						<div class="card mb-3">
+							<img class="card-img-top" src="img/borrao.png" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">BORRÃO</h4>
+								<p class="card-text">Feita no Paint utilizando o Spray, ISSO É UM DINOSSAURO?</p>
+								<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+							</div>
 						</div>
 					</div>
 				</div>
-			
+
 			</div>
-		</div>
-		<!--FIM ANCORA-->
 
-		<div class="card-group"> <!--CARDS DOS ICONES DA UVA-->
+			<hr>
 
-			<!--CARD BORALI-->
-			<div class="card mb-3">
-				<img class="card-img-top" src="img/borali-icon-resized.png" alt="Icone Borali">
-				<div class="card-body">
-					<h4 class="card-title">BORALÍ</h4>
-					<p class="card-text">Icone de aplicação em desenvolvimento pela UVA</p>
-					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+			<div class="sessoes">
+				<div id="list-item-2" class="card">
+					<h3>Projetos</h3>
+				</div>
+				<div class="jumbotron jumbotron-fluid ">
+					<div class="card-group uva-cards"> <!--CARDS DOS ICONES DA UVA-->
+
+						<!--CARD BORALI-->
+						<div class="card mb-3">
+							<img class="card-img-top" src="img/borali-icon-resized.png" alt="Icone Borali">
+							<div class="card-body">
+								<h4 class="card-title">BORALÍ</h4>
+								<p class="card-text">Icone de aplicação em desenvolvimento pela UVA</p>
+								<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+							</div>
+						</div>
+
+						<!--CARD GENTILICOS-->
+						<div class="card mb-3">
+							<img class="card-img-top " src="img/gentilicos-icon-resized.png" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">GENTÍLICOS</h4>
+								<p class="card-text">Icone de aplicativo sobre gentilicos brasileiros</p>
+								<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+							</div>
+						</div>
+
+						<!--CARD UVA LOGO-->
+						<div class="card mb-3">
+							<img class="card-img-top " src="img/uva-logo-resized.png" alt="Card image cap">
+							<div class="card-body">
+								<h4 class="card-title">UVA</h4>
+								<p class="card-text">Startup em planejamento... :)</p>
+								<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+							</div>
+						</div>
+
+					</div> <!--FIM DO GRUPO DE LOGOS DA UVA-->
 				</div>
 			</div>
 
-			<!--CARD GENTILICOS-->
-			<div class="card mb-3">
-				<img class="card-img-top " src="img/gentilicos-icon-resized.png" alt="Card image cap">
-				<div class="card-body">
-					<h4 class="card-title">GENTÍLICOS</h4>
-					<p class="card-text">Icone de aplicativo sobre gentilicos brasileiros</p>
-					<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+			<hr>
+
+			<div id="list-item-3" class="sessoes">
+				<div class="card" style="margin-bottom: 50px;">
+					<h3>Diversos</h3>
 				</div>
+				<div class="card-group"> <!--CARDS INCP / FUTURE BAR-->
+
+					<!--CARD INCP-->
+					<div class="card mb-3">
+						<img class="card-img-top" src="img/incp-resized.png" alt="Icone Borali">
+						<div class="card-body">
+							<h4 class="card-title">INCP</h4>
+							<p class="card-text">Emblema do time de e-sports</p>
+							<p class="card-text"><small class="text-muted">Feita em 2015</small></p>
+						</div>
+					</div>
+
+					<!--CARD FUTURE BAR-->
+					<div class="card mb-3">
+						<img class="card-img-top " src="img/sprites-bar-resized.png" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">FUTURE BAR</h4>
+							<p class="card-text">Mockup de programa que ilustra o problema do bar pequeno</p>
+							<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+						</div>
+					</div>
+
+				</div> <!--FIM DOS CARDS INCP / FUTURE BAR-->
+
+
+				<div class="card-group"> <!--DETEPARTAMENTO TELEMATICA-->
+
+					<!--CARD DETEL-->
+					<div class="card mb-3">
+						<img class="card-img-top" src="img/icone-detel-resized.png" alt="Icone Borali">
+						<div class="card-body">
+							<h4 class="card-title">DETEL</h4>
+							<p class="card-text">Escudo dos times do departamento de telemática do IFCE</p>
+							<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+						</div>
+					</div>
+
+					<!--CARD UNIFORME-->
+					<div class="card mb-3">
+						<img class="card-img-top " src="img/uniforme-basquete-resized.png" alt="Card image cap">
+						<div class="card-body">
+							<h4 class="card-title">UNIFORME</h4>
+							<p class="card-text">Uniforme de basquete do departamento</p>
+							<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+						</div>
+					</div>
+
+				</div> <!--FIM DOS DEPARTAMENTO DE TELEMATICA-->
+				
 			</div>
 
-			<!--CARD UVA LOGO-->
-			<div class="card mb-3">
-				<img class="card-img-top " src="img/uva-logo-resized.png" alt="Card image cap">
-				<div class="card-body">
-					<h4 class="card-title">UVA</h4>
-					<p class="card-text">Startup em planejamento... :)</p>
-					<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
-				</div>
-			</div>
-
-		</div> <!--FIM DO GRUPO DE LOGOS DA UVA-->
-
-
-
-		<div class="card-group"> <!--CARDS INCP / FUTURE BAR-->
-
-			<!--CARD INCP-->
-			<div class="card mb-3">
-				<img class="card-img-top" src="img/incp-resized.png" alt="Icone Borali">
-				<div class="card-body">
-					<h4 class="card-title">INCP</h4>
-					<p class="card-text">Emblema do time de e-sports</p>
-					<p class="card-text"><small class="text-muted">Feita em 2015</small></p>
-				</div>
-			</div>
-
-			<!--CARD FUTURE BAR-->
-			<div class="card mb-3">
-				<img class="card-img-top " src="img/sprites-bar-resized.png" alt="Card image cap">
-				<div class="card-body">
-					<h4 class="card-title">FUTURE BAR</h4>
-					<p class="card-text">Mockup de programa que ilustra o problema do bar pequeno</p>
-					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
-				</div>
-			</div>
-
-		</div> <!--FIM DOS CARDS INCP / FUTURE BAR-->
-
-
-
-		<div class="card-group"> <!--DETEPARTAMENTO TELEMATICA-->
-
-			<!--CARD DETEL-->
-			<div class="card mb-3">
-				<img class="card-img-top" src="img/icone-detel-resized.png" alt="Icone Borali">
-				<div class="card-body">
-					<h4 class="card-title">DETEL</h4>
-					<p class="card-text">Escudo dos times do departamento de telemática do IFCE</p>
-					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
-				</div>
-			</div>
-
-			<!--CARD UNIFORME-->
-			<div class="card mb-3">
-				<img class="card-img-top " src="img/uniforme-basquete-resized.png" alt="Card image cap">
-				<div class="card-body">
-					<h4 class="card-title">UNIFORME</h4>
-					<p class="card-text">Uniforme de basquete do departamento</p>
-					<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
-				</div>
-			</div>
-
-		</div> <!--FIM DOS DEPARTAMENTO DE TELEMATICA-->
-
-
+		</div> <!--FIM ANCORA-->
 
 		<footer>
 			<nav class="my-footer navbar navbar-dark bg-dark text-white" style="font-weight: bold;">

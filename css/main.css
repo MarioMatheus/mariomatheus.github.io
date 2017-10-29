@@ -21,7 +21,11 @@
     font-weight: bold;
 }
 
-.presentation h3 {
+.sessoes {
+    text-align: center;
+}
+
+h3 {
 	font-family: "Courier New", Courier, monospace;
 }
 
@@ -49,4 +53,21 @@
 .my-footer {
     margin-top: 150px;
     height: 150px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.card-group {
+    margin: 5%;
+}
+
+.uva-cards {
+    max-width: 800px;
+    margin: auto;
+}
+
+.uva-cards-margin {
+    margin: 1%;
 }
