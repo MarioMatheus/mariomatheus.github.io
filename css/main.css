@@ -31,6 +31,14 @@
 	margin-top: 100px;
 }
 
+.my-cards img {
+    padding: 2px;
+}
+
+.my-card-body {
+    padding: 2px;
+}
+
 .my-group {
 	max-height: 100% !important;
 	max-width: 100% !important;
