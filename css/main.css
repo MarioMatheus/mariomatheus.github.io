@@ -25,7 +25,7 @@
     text-align: center;
 }
 
-h3 {
+.presentation h3 {
 	font-family: "Courier New", Courier, monospace;
 }
 
@@ -66,8 +66,4 @@ h3 {
 .uva-cards {
     max-width: 800px;
     margin: auto;
-}
-
-.uva-cards-margin {
-    margin: 1%;
 }
