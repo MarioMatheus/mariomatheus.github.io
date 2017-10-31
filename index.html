@@ -10,6 +10,16 @@
 
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 		<script type="text/javascript">
+
+			window.onload = function() {
+				if(!window.location.hash) {
+					window.location = window.location + '#loaded';
+					window.location.reload();
+				}
+			}
+
+			$(window).resize(function(){location.reload();});
+
 			$(document).ready(function() {
 				function filterPath(string) {
 					return string
@@ -31,6 +41,7 @@
 					}
 				});
 			});
+
 		</script>
 
 	</head>
@@ -97,10 +108,10 @@
 					<h3>Projetos</h3>
 				</div>
 				<div class="jumbotron jumbotron-fluid ">
-					<div class="card-group uva-cards"> <!--CARDS DOS ICONES DA UVA-->
+					<div class="card-group"> <!--CARDS DOS ICONES DA UVA-->
 
 						<!--CARD BORALI-->
-						<div class="card mb-3">
+						<div class="card mb-3 uva-cards">
 							<img class="card-img-top" src="img/borali-icon-resized.png" alt="Icone Borali">
 							<div class="card-body">
 								<h4 class="card-title">BORALÍ</h4>
@@ -110,8 +121,8 @@
 						</div>
 
 						<!--CARD GENTILICOS-->
-						<div class="card mb-3">
-							<img class="card-img-top " src="img/gentilicos-icon-resized.png" alt="Card image cap">
+						<div class="card mb-3 uva-cards">
+							<img class="card-img-top " src="img/gentilicos-icon-resized.png" alt="Icone Gentilicos">
 							<div class="card-body">
 								<h4 class="card-title">GENTÍLICOS</h4>
 								<p class="card-text">Icone de aplicativo sobre gentilicos brasileiros</p>
@@ -120,8 +131,8 @@
 						</div>
 
 						<!--CARD UVA LOGO-->
-						<div class="card mb-3">
-							<img class="card-img-top " src="img/uva-logo-resized.png" alt="Card image cap">
+						<div class="card mb-3 uva-cards">
+							<img class="card-img-top " src="img/uva-logo-resized.png" alt="Logo UVA">
 							<div class="card-body">
 								<h4 class="card-title">UVA</h4>
 								<p class="card-text">Startup em planejamento... :)</p>
@@ -129,7 +140,46 @@
 							</div>
 						</div>
 
+						<!--CARD STARSOFT LOGO-->
+						<div class="card mb-3 uva-cards">
+							<img class="card-img-top " src="img/starsoft-icon.png" alt="Logo StarSoft">
+							<div class="card-body">
+								<h4 class="card-title">Starsoft</h4>
+								<p class="card-text">Logo de empresa fictícia.</p>
+								<p class="card-text"><small class="text-muted">Feita em 2016</small></p>
+							</div>
+						</div>
+
 					</div> <!--FIM DO GRUPO DE LOGOS DA UVA-->
+
+					<div class="card-group"> <!--CARDS DOS MOCKUPS-->
+						
+						<!--CARD BORALI LOGIN-->
+						<div class="card mb-3">
+							<h6 class="card-title">Boralí Login</h6>
+							<img class="card-img-top" src="img/mockup-borali-login.png" alt="Mockup Borali">
+						</div>
+						
+						<!--CARD BORALI FEED-->
+						<div class="card mb-3">
+							<h6 class="card-title">Boralí Feed</h6>
+							<img class="card-img-top" src="img/mockup-borali-feed.png" alt="Mockup Borali">
+						</div>
+						
+						<!--CARD GENTILICOS PERGUNTAS-->
+						<div class="card mb-3">
+							<h6 class="card-title">Gentílicos Perguntas</h6>
+							<img class="card-img-top" src="img/mockup-gentilicos-pergunta.jpg" alt="Mockup Gentílicos">
+						</div>
+						
+						<!--CARD GENTILICOS RECORDES-->
+						<div class="card mb-3">
+							<h6 class="card-title">Gentílicos Recordes</h6>
+							<img class="card-img-top " src="img/mockup-gentilicos-recordes.jpg" alt="Mockup Gentílicos">
+						</div>
+						
+					</div> <!--FIM DO GRUPO DE MOCKUPS-->
+
 				</div>
 			</div>
 
@@ -143,7 +193,7 @@
 
 					<!--CARD INCP-->
 					<div class="card mb-3">
-						<img class="card-img-top" src="img/incp-resized.png" alt="Icone Borali">
+						<img class="card-img-top" src="img/incp-resized.png" alt="Emblema INCP">
 						<div class="card-body">
 							<h4 class="card-title">INCP</h4>
 							<p class="card-text">Emblema do time de e-sports</p>
@@ -153,7 +203,7 @@
 
 					<!--CARD FUTURE BAR-->
 					<div class="card mb-3">
-						<img class="card-img-top " src="img/sprites-bar-resized.png" alt="Card image cap">
+						<img class="card-img-top " src="img/sprites-bar-resized.png" alt="Sprite Bar">
 						<div class="card-body">
 							<h4 class="card-title">FUTURE BAR</h4>
 							<p class="card-text">Mockup de programa que ilustra o problema do bar pequeno</p>
@@ -168,7 +218,7 @@
 
 					<!--CARD DETEL-->
 					<div class="card mb-3">
-						<img class="card-img-top" src="img/icone-detel-resized.png" alt="Icone Borali">
+						<img class="card-img-top" src="img/icone-detel-resized.png" alt="Escudo Dtel">
 						<div class="card-body">
 							<h4 class="card-title">DETEL</h4>
 							<p class="card-text">Escudo dos times do departamento de telemática do IFCE</p>
@@ -178,7 +228,7 @@
 
 					<!--CARD UNIFORME-->
 					<div class="card mb-3">
-						<img class="card-img-top " src="img/uniforme-basquete-resized.png" alt="Card image cap">
+						<img class="card-img-top " src="img/uniforme-basquete-resized.png" alt="Uniforme Dtel">
 						<div class="card-body">
 							<h4 class="card-title">UNIFORME</h4>
 							<p class="card-text">Uniforme de basquete do departamento</p>
@@ -192,7 +242,9 @@
 
 		</div> <!--FIM ANCORA-->
 
-		<footer>
+
+		<footer style="margin-top: 150px;">
+			<img class="lord-gif" src="img/lord-gif.gif">
 			<nav class="my-footer navbar navbar-dark bg-dark text-white" style="font-weight: bold;">
 				<p>Desenhos de Mario Matheus</p>
 				<p>Email: mariomatheu@gmail.com</p>
