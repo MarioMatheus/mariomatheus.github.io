@@ -8,25 +8,18 @@
 		<link rel="icon" href="img/foo-icon.png" type="image/x-icon" />
 		<link rel="shortcut icon" href="img/foo-small-icon.png" type="image/x-icon" />
 
-		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 		<script type="text/javascript">
 
-			window.onload = function() {
-				if(!window.location.hash) {
-					window.location = window.location + '#loaded';
-					window.location.reload();
-				}
-			}
-
-			$(window).resize(function(){location.reload();});
-
 			$(document).ready(function() {
+
 				function filterPath(string) {
 					return string
 					.replace(/^\//,'')
 					.replace(/(index|default).[a-zA-Z]{3,4}$/,'')
 					.replace(/\/$/,'');
 				}
+				
 				$('a[href*=#]').each(function() {
 					if ( filterPath(location.pathname) == filterPath(this.pathname) && location.hostname == this.hostname && this.hash.replace(/#/,'') ) {
 						var $targetId = $(this.hash), $targetAnchor = $('[name=' + this.hash.slice(1) +']');
@@ -34,15 +27,16 @@
 						if ($target) {
 							var targetOffset = $target.offset().top;
 							$(this).click(function() {
-								$('html, body').animate({scrollTop: targetOffset}, 600);
+								$('html, body').animate({scrollTop: targetOffset}, 300);
 								return false;
 							});
 						}
 					}
 				});
+
 			});
 
-		</script>
+		</script> -->
 
 	</head>
 
