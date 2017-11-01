@@ -52,10 +52,10 @@
 		</nav>
 		
 		<!--APRESENTACAO DO SITE-->
-		<div class="presentation section text-center jumbotron jumbotron-fluid">
+		<header class="presentation section text-center jumbotron jumbotron-fluid">
 			<h1>Meus desenhos</h1>
 			<h3>Mario Matheus</h3>
-			<div id="list-example" class="list-group">
+			<nav id="list-example" class="list-group">
 				<ul class="nav justify-content-center">
 					<li class="nav-item">
 						<a class="nav-link active" href="#desenhos">Desenhos</a>
@@ -67,13 +67,13 @@
 						<a class="nav-link" href="#diversos">Diversos</a>
 					</li>
 				</ul>
-			</div>
-		</div>
-
+			</nav>
+		</header>
 
 		<!--ANCORA-->
-		<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example all">
-			<div id="desenhos" class="jumbotron bg-white">
+		<article data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example all">
+			
+			<section id="desenhos" class="jumbotron bg-white">
 
 				<div class="sessoes">
 					<div class="card titulos">
@@ -92,10 +92,9 @@
 					</div>
 				</div>
 
-			</div>
+			</section>
 
-
-			<div id="projetos" class="sessoes jumbotron bg-dark">
+			<section id="projetos" class="sessoes jumbotron">
 				<div class="card titulos">
 					<h3>Projetos</h3>
 				</div>
@@ -173,10 +172,9 @@
 					</div> <!--FIM DO GRUPO DE MOCKUPS-->
 
 				</div>
-			</div>
+			</section>
 
-
-			<div id="diversos" class="sessoes jumbotron bg-white">
+			<section id="diversos" class="sessoes jumbotron bg-white">
 				<div class="card titulos" style="margin-bottom: 50px;">
 					<h3>Diversos</h3>
 				</div>
@@ -229,11 +227,12 @@
 
 				</div> <!--FIM DOS DEPARTAMENTO DE TELEMATICA-->
 				
-			</div>
+			</section>
 
-		</div> <!--FIM ANCORA-->
+		</article>
+		<!--FIM ANCORA-->
 
-
+		<!--RODAPÉ-->
 		<footer style="margin-top: 150px;">
 			<img class="lord-gif" src="img/lord-gif.gif">
 			<nav class="my-footer navbar navbar-dark bg-dark text-white" style="font-weight: bold;">
