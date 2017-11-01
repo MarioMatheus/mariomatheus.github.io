@@ -1,5 +1,6 @@
 <html>
 	<head>
+
 		<title>Desenhando</title>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -70,15 +71,19 @@
 			</nav>
 		</header>
 
-		<!--ANCORA-->
-		<article data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example all">
+		<!--CONTEUDO-->
+		<div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example all">
 			
-			<section id="desenhos" class="jumbotron bg-white">
+			<!--SESSAO DE DESENHOS-->
+			<section id="desenhos" class="jumbotron sessoes bg-white">
 
-				<div class="sessoes">
-					<div class="card titulos">
-						<h3>Desenhos</h3>
-					</div>
+				<!--TITULO DA SESSAO-->
+				<div class="card titulos">
+					<h3>Desenhos</h3>
+				</div>
+					
+				<!--GRUPOS DE CARDS-->
+				<article>
 					<!--CARD BORRAO-->
 					<div class="card-group">
 						<div class="card mb-3">
@@ -90,16 +95,24 @@
 							</div>
 						</div>
 					</div>
-				</div>
+				</article>
+
 
 			</section>
 
+			<!--SESSAO DE PROJETOS-->
 			<section id="projetos" class="sessoes jumbotron">
+
+				<!--TITULO DA SESSAO-->
 				<div class="card titulos">
 					<h3>Projetos</h3>
 				</div>
-				<div>
-					<div class="card-group"> <!--CARDS DOS ICONES DA UVA-->
+
+				<!--GRUPOS DE CARDS-->
+				<article>
+
+					<!--CARDS DOS ICONES DA UVA-->
+					<div class="card-group"> 
 
 						<!--CARD BORALI-->
 						<div class="card mb-3 uva-cards">
@@ -141,9 +154,10 @@
 							</div>
 						</div>
 
-					</div> <!--FIM DO GRUPO DE LOGOS DA UVA-->
+					</div>
 
-					<div class="card-group"> <!--CARDS DOS MOCKUPS-->
+					<!--CARDS DOS MOCKUPS-->
+					<div class="card-group">
 						
 						<!--CARD BORALI LOGIN-->
 						<div class="card mb-3">
@@ -169,68 +183,78 @@
 							<img class="card-img-top " src="img/mockup-gentilicos-recordes.jpg" alt="Mockup Gentílicos">
 						</div>
 						
-					</div> <!--FIM DO GRUPO DE MOCKUPS-->
+					</div>
+					
+				</article>
 
-				</div>
 			</section>
 
+			<!--SESSAO DE DIVERSOS-->
 			<section id="diversos" class="sessoes jumbotron bg-white">
+				
+				<!--TITULO DA SESSAO-->
 				<div class="card titulos" style="margin-bottom: 50px;">
 					<h3>Diversos</h3>
 				</div>
-				<div class="card-group"> <!--CARDS INCP / FUTURE BAR-->
 
-					<!--CARD INCP-->
-					<div class="card mb-3">
-						<img class="card-img-top" src="img/incp-resized.png" alt="Emblema INCP">
-						<div class="card-body">
-							<h4 class="card-title">INCP</h4>
-							<p class="card-text">Emblema do time de e-sports</p>
-							<p class="card-text"><small class="text-muted">Feita em 2015</small></p>
+				<!--GRUPOS DE CARDS-->
+				<article>
+
+					<!--CARDS INCP / FUTURE BAR-->
+					<div class="card-group">
+						
+						<!--CARD INCP-->
+						<div class="card mb-3">
+							<img class="card-img-top" src="img/incp-resized.png" alt="Emblema INCP">
+							<div class="card-body">
+								<h4 class="card-title">INCP</h4>
+								<p class="card-text">Emblema do time de e-sports</p>
+								<p class="card-text"><small class="text-muted">Feita em 2015</small></p>
+							</div>
 						</div>
+
+						<!--CARD FUTURE BAR-->
+						<div class="card mb-3">
+							<img class="card-img-top " src="img/sprites-bar-resized.png" alt="Sprite Bar">
+							<div class="card-body">
+								<h4 class="card-title">FUTURE BAR</h4>
+								<p class="card-text">Mockup de programa que ilustra o problema do bar pequeno</p>
+								<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+							</div>
+						</div>
+
 					</div>
 
-					<!--CARD FUTURE BAR-->
-					<div class="card mb-3">
-						<img class="card-img-top " src="img/sprites-bar-resized.png" alt="Sprite Bar">
-						<div class="card-body">
-							<h4 class="card-title">FUTURE BAR</h4>
-							<p class="card-text">Mockup de programa que ilustra o problema do bar pequeno</p>
-							<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+					<!--DETEPARTAMENTO TELEMATICA-->
+					<div class="card-group">
+
+						<!--CARD DETEL-->
+						<div class="card mb-3">
+							<img class="card-img-top" src="img/icone-detel-resized.png" alt="Escudo Dtel">
+							<div class="card-body">
+								<h4 class="card-title">DETEL</h4>
+								<p class="card-text">Escudo dos times do departamento de telemática do IFCE</p>
+								<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+							</div>
 						</div>
+
+						<!--CARD UNIFORME-->
+						<div class="card mb-3">
+							<img class="card-img-top " src="img/uniforme-basquete-resized.png" alt="Uniforme Dtel">
+							<div class="card-body">
+								<h4 class="card-title">UNIFORME</h4>
+								<p class="card-text">Uniforme de basquete do departamento</p>
+								<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
+							</div>
+						</div>
+
 					</div>
 
-				</div> <!--FIM DOS CARDS INCP / FUTURE BAR-->
+				</article>
 
-
-				<div class="card-group"> <!--DETEPARTAMENTO TELEMATICA-->
-
-					<!--CARD DETEL-->
-					<div class="card mb-3">
-						<img class="card-img-top" src="img/icone-detel-resized.png" alt="Escudo Dtel">
-						<div class="card-body">
-							<h4 class="card-title">DETEL</h4>
-							<p class="card-text">Escudo dos times do departamento de telemática do IFCE</p>
-							<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
-						</div>
-					</div>
-
-					<!--CARD UNIFORME-->
-					<div class="card mb-3">
-						<img class="card-img-top " src="img/uniforme-basquete-resized.png" alt="Uniforme Dtel">
-						<div class="card-body">
-							<h4 class="card-title">UNIFORME</h4>
-							<p class="card-text">Uniforme de basquete do departamento</p>
-							<p class="card-text"><small class="text-muted">Feita em 2017</small></p>
-						</div>
-					</div>
-
-				</div> <!--FIM DOS DEPARTAMENTO DE TELEMATICA-->
-				
 			</section>
 
-		</article>
-		<!--FIM ANCORA-->
+		</div>
 
 		<!--RODAPÉ-->
 		<footer style="margin-top: 150px;">
