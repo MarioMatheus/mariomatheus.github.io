@@ -16,6 +16,10 @@
     background-size: cover;
 }
 
+.all {
+    margin: 2%;
+}
+
 .presentation h1 {
     text-align: center!important;
     font-weight: bold;
@@ -23,6 +27,11 @@
 
 .sessoes {
     text-align: center;
+}
+
+.titulos {
+    margin: 0 3%;
+    font-family: "Courier New", Courier, monospace;
 }
 
 .presentation h3 {
